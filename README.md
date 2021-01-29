@@ -1,4 +1,4 @@
-### Assignment
+### What it's all about?
 
 Students in primary school often arrange arithmetic problems vertically to make them easier to solve. For example, "235 + 52" becomes:
 ```
@@ -7,13 +7,17 @@ Students in primary school often arrange arithmetic problems vertically to make 
 -----
 ```
 
-Create a function that receives a list of strings that are arithmetic problems and returns the problems arranged vertically and side-by-side. The function should optionally take a second argument. When the second argument is set to `True`, the answers should be displayed.
+This mini-program receives a list of strings that are arithmetic problems and returns the problems ordered vertically and side by side. The function must optionally take a second argument. When the second argument is set to `True`, the answers should be displayed.
 
 ### For example
 
 Function Call:
-```py
-arithmetic_arranger(["32 + 698", "3801 - 2", "45 + 43", "123 + 49"])
+```
+Write 5 problems:
+-: "32 + 698"
+-: "3801 - 2"
+-: "45 + 43"
+-: "123 + 49"
 ```
 
 Output:
@@ -24,8 +28,12 @@ Output:
 ```
 
 Function Call:
-```py
-arithmetic_arranger(["32 + 8", "1 - 3801", "9999 + 9999", "523 - 49"], True)
+```
+Write 5 problems:
+-: "32 + 8"
+-: "1 - 3801"
+-: "9999 + 9999"
+-: "523 - 49"
 ```
 
 Output:
@@ -55,15 +63,3 @@ The function will return the correct conversion if the supplied problems are pro
     * Numbers should be right-aligned.
     * There should be four spaces between each problem.
     * There should be dashes at the bottom of each problem. The dashes should run along the entire length of each problem individually. (The example above shows what this should look like.)
-
-### Development
-
-Write your code in `arithmetic_arranger.py`. For development, you can use `main.py` to test your `arithmetic_arranger()` function. Click the "run" button and `main.py` will run.
-
-### Testing 
-
-The unit tests for this project are in `test_module.py`. We imported the tests from `test_module.py` to `main.py` for your convenience. The tests will run automatically whenever you hit the "run" button.
-
-### Submitting
-
-Copy your project's URL and submit it to freeCodeCamp.

@@ -1,10 +1,10 @@
 # This entrypoint file to be used in development. Start by reading README.md
 from arithmetic_arranger import arithmetic_arranger
-from unittest import main
 
+print('Write 5 problems:')
 
-print(arithmetic_arranger(["32 + 698", "3801 - 2", "45 + 43", "123 + 49"]))
+problems = []
+for i in range(1, 5):
+    problems.append(input('-:'))
 
-
-# Run unit tests automatically
-# main(module='test_module', exit=False)
+arithmetic_arranger(problems)
