@@ -30,9 +30,9 @@ def arithmetic_arranger(problems):
     sum_width = len(max(op, key=len)) + 2
     extra_space = sum_width - len(op[2]) - 1
 
-    first_line += f'{op[0]:>{sum_width}}{"":<4}'
-    second_line += f'{op[1]}{"".ljust(extra_space, " ")}{op[2]:<{len(op[2]) + 4}}'
-    third_line += f'{"".ljust(sum_width, "-")}{"":>4}'
-    quarter_line += f'{sum_res:>{sum_width}}{"":<4}'
+    first_line += f'{op[0]:>{sum_width}}{" " * 4}'
+    second_line += f'{op[1]}{" " * extra_space}{op[2]:<{len(op[2]) + 4}}'
+    third_line += f'{"-" * sum_width}{"":>4}'
+    quarter_line += f'{sum_res:>{sum_width}}{" " * 4}'
 
   print(f'{first_line}\n{second_line}\n{third_line}\n{quarter_line}')

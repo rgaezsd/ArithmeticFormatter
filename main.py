@@ -4,7 +4,7 @@ from arithmetic_arranger import arithmetic_arranger
 print('Write 5 problems:')
 
 problems = []
-for i in range(1, 5):
+for i in range(5):
     problems.append(input('-:'))
 
-arithmetic_arranger(problems)
+print(arithmetic_arranger(problems))
